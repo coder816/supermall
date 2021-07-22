@@ -1,5 +1,4 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 const Home = () => import('../views/home/Home')
 const Category = () => import('../views/category/Category')
 const ShopCart = () => import('../views/shopcart/ShopCart')
@@ -7,8 +6,8 @@ const Profile = () => import('../views/profile/Profile')
 
 const routes = [
   {
-    path: '/home',
-    redirect: Home
+    path: '',
+    redirect: '/home'
   },
   {
     path: '/home',
@@ -28,15 +27,9 @@ const routes = [
   }
 ]
 
-const router = VueRouter.createRouter({
-  history: VueRouter.createWebHashHistory(),
-  routes,
+const router = createRouter({
+  history: createWebHistory(process.env.BASE_URL),
+  routes
 })
-
-const app = Vue.createApp({})
-
-app.use(router);
-
-app.mount('#app')
 
 export default router;
