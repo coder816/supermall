@@ -52,7 +52,7 @@ export default {
   height: 24px;
   margin-top: 3px;
   vertical-align: middle;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
 </style>

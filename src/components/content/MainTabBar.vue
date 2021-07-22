@@ -38,8 +38,10 @@ export default {
 
 <style scoped>
   img{
-    height: 25px;
-    width: 25px;
-    padding-bottom: 0;
+    height: 24px;
+    width: 24px;
+    margin-top: 3px;
+    vertical-align: middle;
+    margin-bottom: 1px;
   }
 </style>

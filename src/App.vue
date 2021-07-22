@@ -22,4 +22,7 @@ export default {
     padding: 0;
     margin: 0;
   }
+  h2 {
+    margin-top: 0;
+  }
 </style>
